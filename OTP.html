@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+        integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        #but {
+            margin: 4px;
+            color: red;
+            padding: 30px;
+            font-size: 30px;
+            border-radius: 10px;
+            border: 4px solid black;
+            background-color: rgb(55, 226, 43);
+        }
+
+        #but:hover {
+            color: rgb(12, 12, 12);
+            background-color: white;
+            border-color: rgb(255, 47, 47);
+            animation: my 5s;
+            /* position: relative; */
+
+        }
+
+        .img1 {
+            height: 50px;
+            width: 50px;
+            position: relative;
+            top: -55px;
+            left: 150px;
+        }
+
+        .h1new {
+            margin-left: 10px;
+        }
+
+        @keyframes my {
+
+            0% {
+                width: 280px;
+            }
+
+            0% {
+                width: 300px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button onclick="hello()" id="but">Generate OTP</button>
+
+    <div class="h1n">
+        <h3 class="h1new">Press The Button</h3><span><img class="img1" src="./IMAGE/red-arrow-25-1-1024x1024.png"
+                alt=""></span>
+
+
+
+
+        <script>
+            function hello() {
+                alert(parseInt(Math.random() * 10000));
+            }
+
+
+
+
+        </script>
+
+
+
+</body>
+
+</html>
